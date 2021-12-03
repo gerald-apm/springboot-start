@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.geraldapm.springweb.demo-app</groupId>
-    <artifactId>demo-app</artifactId>
+    <artifactId>product-impl</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -19,29 +18,24 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.9.2</version>
+            <groupId>com.geraldapm</groupId>
+            <artifactId>product-dto</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.geraldapm</groupId>
             <artifactId>product-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.geraldapm</groupId>
+            <artifactId>product-data</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.geraldapm</groupId>
+            <artifactId>base-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
